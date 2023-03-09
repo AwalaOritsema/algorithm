@@ -1,0 +1,25 @@
+ALGORITHM sentence_reader
+VAR
+    box : ARRAY_OF STRING[];
+    sentence:="Please enter your sentence"; 
+    count_char:INTEGER := 0;
+    count_word:INTEGER := 0;
+    count_vowel:INTEGER := 0;
+    vowels : ARRAY_OF CHAR[5];
+    // the values of the vowel array are "a",'e','i','o','u'
+BEGIN
+    Read(sentence)
+    // to count the charater in the sentence
+    For Loop(sentence)
+    count_char:= count_char + 1
+    Write(count_char)
+    //To count the words we count the space(" ") and add 1
+    count_word := sentence.count(" ") + 1
+    Write(count_word)
+    //To count the vowels
+    For Loop(sentence)
+    if char in vowels
+    put char in box
+    count_vowel:=box.lenght
+    Write(count_vowel)
+END
