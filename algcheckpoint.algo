@@ -10,7 +10,7 @@ VAR
 BEGIN
     Read(sentence)
     // to count the charater in the sentence
-    FOR char in sentence;
+    FOR char in sentence DO
      count_char:= count_char + 1;
     END_FOR
 
@@ -19,7 +19,7 @@ BEGIN
     count_word := sentence.count(" ") + 1;
     Write(count_word);
     //To count the vowels
-    FOR char in sentence;
+    FOR char in sentence DO
      if char in vowels;
       put char in box;
     END_FOR
