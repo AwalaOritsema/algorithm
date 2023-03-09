@@ -10,16 +10,19 @@ VAR
 BEGIN
     Read(sentence)
     // to count the charater in the sentence
-    For Loop(sentence)
-    count_char:= count_char + 1
+    FOR char in sentence;
+     count_char:= count_char + 1;
+    END_FOR
+
     Write(count_char)
     //To count the words we count the space(" ") and add 1
-    count_word := sentence.count(" ") + 1
-    Write(count_word)
+    count_word := sentence.count(" ") + 1;
+    Write(count_word);
     //To count the vowels
-    For Loop(sentence)
-    if char in vowels
-    put char in box
-    count_vowel:=box.lenght
-    Write(count_vowel)
+    FOR char in sentence;
+     if char in vowels;
+      put char in box;
+    END_FOR
+    count_vowel:=box.lenght;
+    Write(count_vowel),
 END
