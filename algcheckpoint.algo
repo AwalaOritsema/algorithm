@@ -20,8 +20,9 @@ BEGIN
     Write(count_word);
     //To count the vowels
     FOR char in sentence DO
-     if char in vowels;
+     IF( char in vowels);
       put char in box;
+     END_IF 
     END_FOR
     count_vowel:=box.lenght;
     Write(count_vowel),
